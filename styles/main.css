@@ -68,18 +68,18 @@ a {
    ========================================================================== */
 
 :root {
-  /* Paleta de cores — tons naturais, calmos e profissionais */
-  --color-primary: #4a7c6f;          /* Verde suave — confiança, natureza */
-  --color-primary-light: #6b9e8f;    /* Verde claro */
-  --color-primary-dark: #345a50;     /* Verde escuro */
+  /* Paleta de cores — terracota suave, acolhedor e terapêutico */
+  --color-primary: #b07856;          /* Terracota médio — acolhimento, humanidade */
+  --color-primary-light: #c99a7d;    /* Terracota claro */
+  --color-primary-dark: #8b5e3c;     /* Terracota escuro */
 
-  --color-secondary: #7ba4b8;        /* Azul suave — calma, serenidade */
-  --color-secondary-light: #a3c4d4;  /* Azul claro */
-  --color-secondary-dark: #5a8399;   /* Azul escuro */
+  --color-secondary: #a8917a;        /* Areia quente — calma, conforto */
+  --color-secondary-light: #c4b3a0;  /* Areia clara */
+  --color-secondary-dark: #7d6b58;   /* Areia escura */
 
-  --color-accent: #c4956a;           /* Terracota suave — acolhimento */
-  --color-accent-light: #d4b08e;     /* Terracota claro */
-  --color-accent-dark: #a07548;      /* Terracota escuro */
+  --color-accent: #7a9e8e;           /* Verde sálvia — equilíbrio, natureza */
+  --color-accent-light: #a3c4b4;     /* Verde sálvia claro */
+  --color-accent-dark: #5a7d6d;      /* Verde sálvia escuro */
 
   --color-neutral-50: #faf9f7;       /* Fundo principal — quase branco quente */
   --color-neutral-100: #f3f1ed;      /* Fundo alternativo */
