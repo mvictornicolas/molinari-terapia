@@ -1,0 +1,184 @@
+/* ==========================================================================
+   Reset Básico
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ==========================================================================
+   Custom Properties — Paleta de Cores e Tipografia
+   ========================================================================== */
+
+:root {
+  /* Paleta de cores — tons naturais, calmos e profissionais */
+  --color-primary: #4a7c6f;          /* Verde suave — confiança, natureza */
+  --color-primary-light: #6b9e8f;    /* Verde claro */
+  --color-primary-dark: #345a50;     /* Verde escuro */
+
+  --color-secondary: #7ba4b8;        /* Azul suave — calma, serenidade */
+  --color-secondary-light: #a3c4d4;  /* Azul claro */
+  --color-secondary-dark: #5a8399;   /* Azul escuro */
+
+  --color-accent: #c4956a;           /* Terracota suave — acolhimento */
+  --color-accent-light: #d4b08e;     /* Terracota claro */
+  --color-accent-dark: #a07548;      /* Terracota escuro */
+
+  --color-neutral-50: #faf9f7;       /* Fundo principal — quase branco quente */
+  --color-neutral-100: #f3f1ed;      /* Fundo alternativo */
+  --color-neutral-200: #e8e4de;      /* Bordas suaves */
+  --color-neutral-300: #d4cfc7;      /* Bordas */
+  --color-neutral-400: #a8a29e;      /* Texto secundário claro */
+  --color-neutral-500: #78716c;      /* Texto secundário */
+  --color-neutral-600: #57534e;      /* Texto corpo */
+  --color-neutral-700: #44403c;      /* Texto forte */
+  --color-neutral-800: #292524;      /* Texto títulos */
+  --color-neutral-900: #1c1917;      /* Texto máximo contraste */
+
+  --color-white: #ffffff;
+  --color-error: #c0392b;
+  --color-success: #27ae60;
+
+  /* Tipografia */
+  --font-family-heading: 'Georgia', serif;
+  --font-family-body: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+  --font-size-5xl: 3rem;      /* 48px */
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.75;
+
+  /* Espaçamentos */
+  --spacing-xs: 0.25rem;   /* 4px */
+  --spacing-sm: 0.5rem;    /* 8px */
+  --spacing-md: 1rem;      /* 16px */
+  --spacing-lg: 1.5rem;    /* 24px */
+  --spacing-xl: 2rem;      /* 32px */
+  --spacing-2xl: 3rem;     /* 48px */
+  --spacing-3xl: 4rem;     /* 64px */
+  --spacing-4xl: 6rem;     /* 96px */
+
+  /* Layout */
+  --max-width: 1200px;
+  --content-width: 800px;
+  --header-height: 4rem;
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 1rem;
+  --border-radius-full: 9999px;
+
+  /* Sombras */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  /* Transições */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+}
+
+/* ==========================================================================
+   Estilos Base
+   ========================================================================== */
+
+body {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  color: var(--color-neutral-700);
+  background-color: var(--color-neutral-50);
+  line-height: var(--line-height-normal);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  color: var(--color-neutral-800);
+  line-height: var(--line-height-tight);
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  z-index: 1000;
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: 0;
+}
