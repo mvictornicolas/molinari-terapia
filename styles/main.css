@@ -77,9 +77,9 @@ a {
   --color-secondary-light: #c4b3a0;  /* Areia clara */
   --color-secondary-dark: #7d6b58;   /* Areia escura */
 
-  --color-accent: #7a9e8e;           /* Verde sálvia — equilíbrio, natureza */
-  --color-accent-light: #a3c4b4;     /* Verde sálvia claro */
-  --color-accent-dark: #5a7d6d;      /* Verde sálvia escuro */
+  --color-accent: #c4956a;           /* Dourado terroso — destaque, calor */
+  --color-accent-light: #d4b08e;     /* Dourado claro */
+  --color-accent-dark: #a07548;      /* Dourado escuro */
 
   --color-neutral-50: #faf9f7;       /* Fundo principal — quase branco quente */
   --color-neutral-100: #f3f1ed;      /* Fundo alternativo */
