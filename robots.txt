@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://exemplo.com/sitemap.xml
+Sitemap: https://mvictornicolas.github.io/molinari-terapia/sitemap.xml

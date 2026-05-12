@@ -11,10 +11,9 @@
 
 const SITE_CONFIG = {
   therapist: {
-    name: "Nome do Terapeuta",
-    phone: "5511999999999",
-    email: "contato@exemplo.com",
-    calcomUsername: "terapeuta",
+    name: "Victor Nicolas Molinari",
+    phone: "5512997564777",
+    email: "mvictornicolas@gmail.com",
   },
   sections: [
     { id: "hero", label: "Início" },

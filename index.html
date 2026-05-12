@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hipnoterapia Humanista | Nome do Terapeuta</title>
+  <title>Hipnoterapia Humanista | Victor Nicolas Molinari</title>
 
   <!-- SEO Meta Tags -->
   <meta name="description" content="Hipnoterapia ericksoniana com abordagem humanista para adultos, crianças e casais. Especialidade em neurodivergentes e diagnóstico tardio de autismo.">
   <meta name="keywords" content="hipnoterapia, hipnose ericksoniana, neurodivergentes, autismo, diagnóstico tardio, terapia humanista, comunicação não-violenta, adultos, crianças, casais">
 
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Hipnoterapia Humanista | Nome do Terapeuta">
+  <meta property="og:title" content="Hipnoterapia Humanista | Victor Nicolas Molinari">
   <meta property="og:description" content="Hipnoterapia ericksoniana com abordagem humanista para adultos, crianças e casais. Especialidade em neurodivergentes e diagnóstico tardio de autismo.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://exemplo.com">
+  <meta property="og:url" content="https://mvictornicolas.github.io/molinari-terapia/">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Consultório de Hipnoterapia">
 
@@ -24,16 +24,16 @@
     "@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
     "name": "Consultório de Hipnoterapia",
     "description": "Hipnoterapia ericksoniana com abordagem humanista para adultos, crianças e casais. Especialidade em neurodivergentes e diagnóstico tardio de autismo.",
-    "url": "https://exemplo.com",
-    "telephone": "+5511999999999",
+    "url": "https://mvictornicolas.github.io/molinari-terapia/",
+    "telephone": "+5512997564777",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Cidade",
-      "addressRegion": "Estado",
+      "addressLocality": "Pindamonhangaba",
+      "addressRegion": "SP",
       "addressCountry": "BR"
     },
     "priceRange": "$$",
-    "openingHours": "Mo-Fr 08:00-18:00",
+    "openingHours": "Sa 14:00-17:00",
     "sameAs": [],
     "makesOffer": {
       "@type": "Offer",
@@ -52,46 +52,375 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Performance: inline critical font-display rule -->
+  <style>
+    /* Ensure fonts render with swap to avoid FOIT */
+    @font-face {
+      font-display: swap;
+    }
+  </style>
 </head>
 <body>
   <!-- Skip to content link for accessibility -->
   <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
-  <header id="header">
-    <nav aria-label="Navegação principal">
-      <!-- Navigation will be implemented in Task 3.1 -->
+  <header id="header" class="header">
+    <nav class="header__nav" aria-label="Navegação principal">
+      <a href="#hero" class="header__logo">Hipnoterapia Humanista</a>
+      <button class="header__menu-btn mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="header__menu-icon"></span>
+      </button>
+      <ul class="header__links mobile-menu" id="mobile-menu" role="list">
+        <li><a href="#hero" class="header__link">Início</a></li>
+        <li><a href="#hipnoterapia" class="header__link">Hipnoterapia</a></li>
+        <li><a href="#terapeuta" class="header__link">Sobre Mim</a></li>
+        <li><a href="#publico" class="header__link">Público</a></li>
+        <li><a href="#agendamento" class="header__link">Agendar</a></li>
+        <li><a href="#contato" class="header__link">Contato</a></li>
+      </ul>
     </nav>
   </header>
 
   <main id="main-content">
     <section id="hero" aria-label="Início">
-      <!-- Hero content will be implemented in Task 2.1 -->
+      <div class="hero__container">
+        <h1 class="hero__title">Hipnoterapia com abordagem humanista</h1>
+        <p class="hero__subtitle">Um espaço acolhedor para transformação e autoconhecimento. Através da hipnose ericksoniana, facilito um caminho de escuta, respeito e cuidado — onde você é protagonista da sua própria história.</p>
+        <a href="#agendamento" class="hero__cta">Agendar Consulta</a>
+      </div>
     </section>
 
     <section id="hipnoterapia" aria-label="Sobre a Hipnoterapia">
-      <!-- Hipnoterapia content will be implemented in Task 2.2 -->
+      <div class="hipnoterapia__container animate-on-scroll">
+        <h2 class="hipnoterapia__title">O que é Hipnoterapia Ericksoniana?</h2>
+
+        <div class="hipnoterapia__intro">
+          <p class="hipnoterapia__text">
+            A hipnoterapia ericksoniana é uma abordagem terapêutica que utiliza a hipnose como ferramenta facilitadora do processo de autoconhecimento e transformação pessoal. Diferente do que muitos imaginam, a hipnose não envolve perda de controle ou manipulação — é um estado natural de atenção focada, semelhante àquele momento em que você se concentra profundamente em um livro ou se perde em pensamentos durante uma caminhada.
+          </p>
+          <p class="hipnoterapia__text">
+            Nesse estado de relaxamento e foco, a mente se torna mais receptiva a novas perspectivas e possibilidades. O terapeuta atua como um guia, respeitando sempre o seu ritmo e os seus limites. Você permanece consciente e no controle durante todo o processo.
+          </p>
+        </div>
+
+        <div class="hipnoterapia__fundamentos">
+          <h3 class="hipnoterapia__subtitle">Fundamentos da Abordagem</h3>
+          <p class="hipnoterapia__text">
+            O trabalho terapêutico é construído sobre três pilares que se complementam:
+          </p>
+
+          <div class="hipnoterapia__pilares">
+            <div class="hipnoterapia__pilar">
+              <h4 class="hipnoterapia__pilar-titulo">Psicologia Humanista</h4>
+              <p class="hipnoterapia__pilar-texto">
+                Acredita no potencial de cada pessoa para crescer e se desenvolver. O foco está nas suas forças e capacidades, não apenas nas dificuldades. Cada indivíduo é visto como único e capaz de encontrar seus próprios caminhos.
+              </p>
+            </div>
+
+            <div class="hipnoterapia__pilar">
+              <h4 class="hipnoterapia__pilar-titulo">Filosofia Rogeriana</h4>
+              <p class="hipnoterapia__pilar-texto">
+                Inspirada em Carl Rogers, essa abordagem valoriza a escuta empática, a aceitação incondicional e a autenticidade na relação terapêutica. O espaço terapêutico é construído com respeito e sem julgamentos.
+              </p>
+            </div>
+
+            <div class="hipnoterapia__pilar">
+              <h4 class="hipnoterapia__pilar-titulo">Comunicação Não-Violenta (CNV)</h4>
+              <p class="hipnoterapia__pilar-texto">
+                Baseada nos ensinamentos de Marshall Rosenberg, a CNV nos ajuda a nos conectar com nossas necessidades e sentimentos de forma honesta e compassiva, promovendo relações mais saudáveis consigo e com os outros.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hipnoterapia__areas">
+          <h3 class="hipnoterapia__subtitle">Áreas de Atuação</h3>
+          <p class="hipnoterapia__text">
+            A hipnoterapia pode auxiliar em diversas questões emocionais e comportamentais, incluindo:
+          </p>
+          <ul class="hipnoterapia__lista" role="list">
+            <li class="hipnoterapia__lista-item">Ansiedade e estresse</li>
+            <li class="hipnoterapia__lista-item">Fobias e medos</li>
+            <li class="hipnoterapia__lista-item">Autoestima e autoconfiança</li>
+            <li class="hipnoterapia__lista-item">Bloqueios emocionais</li>
+            <li class="hipnoterapia__lista-item">Luto e perdas</li>
+            <li class="hipnoterapia__lista-item">Dificuldades em relacionamentos</li>
+            <li class="hipnoterapia__lista-item">Apoio a neurodivergentes</li>
+            <li class="hipnoterapia__lista-item">Insônia e distúrbios do sono</li>
+            <li class="hipnoterapia__lista-item">Hábitos que deseja transformar</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section id="terapeuta" aria-label="Sobre o Terapeuta">
-      <!-- Terapeuta content will be implemented in Task 2.3 -->
+      <div class="terapeuta__container animate-on-scroll">
+        <h2 class="terapeuta__title">Sobre o Terapeuta</h2>
+
+        <div class="terapeuta__content">
+          <div class="terapeuta__photo">
+            <div class="terapeuta__photo-placeholder" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="terapeuta__bio">
+            <h3 class="terapeuta__name">Victor Nicolas Molinari</h3>
+            <p class="terapeuta__role">Hipnoterapeuta | Abordagem Humanista</p>
+
+            <p class="terapeuta__text">
+              Sou Victor Nicolas Molinari, hipnoterapeuta formado em hipnose ericksoniana com abordagem humanista. Meu trabalho é guiado pela escuta empática, pelo respeito à singularidade de cada pessoa e pela crença no potencial humano de transformação.
+            </p>
+
+            <p class="terapeuta__text">
+              Minha prática terapêutica é fundamentada na psicologia humanista de Carl Rogers, nos princípios da Comunicação Não-Violenta (CNV) de Marshall Rosenberg e na hipnose ericksoniana como ferramenta facilitadora do processo de autoconhecimento.
+            </p>
+
+            <div class="terapeuta__especialidade">
+              <h4 class="terapeuta__especialidade-titulo">Especialidade em Neurodivergentes</h4>
+              <p class="terapeuta__text">
+                Tenho especial dedicação ao atendimento de pessoas neurodivergentes, com foco em adultos que receberam diagnóstico tardio de autismo. Compreendo os desafios únicos que acompanham essa descoberta na vida adulta — a reconstrução da identidade, o processamento de experiências passadas e a busca por estratégias que respeitem o funcionamento neurodivergente.
+              </p>
+              <p class="terapeuta__text">
+                Acredito que cada pessoa neurodivergente traz consigo uma riqueza de perspectivas e formas de estar no mundo. O espaço terapêutico que ofereço é construído com acolhimento, sem julgamentos e com profundo respeito pela sua forma de ser.
+              </p>
+            </div>
+
+            <div class="terapeuta__abordagem">
+              <h4 class="terapeuta__especialidade-titulo">Minha Abordagem</h4>
+              <ul class="terapeuta__lista" role="list">
+                <li class="terapeuta__lista-item">Formação em Hipnose Ericksoniana</li>
+                <li class="terapeuta__lista-item">Abordagem Humanista (Carl Rogers)</li>
+                <li class="terapeuta__lista-item">Comunicação Não-Violenta (Marshall Rosenberg)</li>
+                <li class="terapeuta__lista-item">Especialidade em neurodivergentes e diagnóstico tardio de autismo</li>
+                <li class="terapeuta__lista-item">Atendimento a adultos, crianças e casais</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="publico" aria-label="Público Atendido">
-      <!-- Público content will be implemented in Task 2.4 -->
+      <div class="publico__container animate-on-scroll">
+        <h2 class="publico__title">Público Atendido</h2>
+        <p class="publico__intro">
+          Cada pessoa é única — e o processo terapêutico respeita essa singularidade. Ofereço atendimento para diferentes públicos, sempre com escuta empática e acolhimento genuíno.
+        </p>
+
+        <div class="publico__cards">
+          <article class="publico__card">
+            <div class="publico__card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h3 class="publico__card-titulo">Adultos</h3>
+            <p class="publico__card-texto">
+              Atendimento individual para adultos que buscam autoconhecimento, superação de desafios emocionais e desenvolvimento pessoal. Um espaço seguro para explorar questões como ansiedade, autoestima, luto e transições de vida.
+            </p>
+          </article>
+
+          <article class="publico__card">
+            <div class="publico__card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M12 12v9"/>
+                <path d="M9 18h6"/>
+              </svg>
+            </div>
+            <h3 class="publico__card-titulo">Crianças</h3>
+            <p class="publico__card-texto">
+              Atendimento lúdico e acolhedor para crianças, utilizando técnicas adaptadas à linguagem infantil. A hipnoterapia pode auxiliar em medos, dificuldades escolares, ansiedade e questões emocionais próprias da infância.
+            </p>
+          </article>
+
+          <article class="publico__card">
+            <div class="publico__card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="10" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="publico__card-titulo">Casais</h3>
+            <p class="publico__card-texto">
+              Atendimento para casais que desejam fortalecer a comunicação, resolver conflitos e construir uma relação mais saudável. Um espaço de escuta mútua, onde ambos são acolhidos com respeito e sem julgamentos.
+            </p>
+          </article>
+        </div>
+
+        <div class="publico__destaque">
+          <div class="publico__destaque-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="publico__destaque-titulo">Especialidade em Neurodivergentes</h3>
+          <p class="publico__destaque-texto">
+            Tenho dedicação especial ao atendimento de pessoas neurodivergentes. Compreendo que cada mente funciona de forma única e que o espaço terapêutico precisa respeitar e valorizar essa diversidade.
+          </p>
+          <p class="publico__destaque-texto">
+            Atuo com foco em <strong>adultos com diagnóstico tardio de autismo</strong> — acompanhando o processo de redescoberta, a reconstrução da identidade e o desenvolvimento de estratégias que respeitem o funcionamento neurodivergente. Se você recebeu um diagnóstico recente ou está em busca de compreender melhor sua neurodivergência, este é um espaço seguro para você.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="agendamento" aria-label="Agendamento">
-      <!-- Agendamento content will be implemented in Task 6.1 -->
+      <div class="agendamento__container animate-on-scroll">
+        <h2 class="agendamento__title">Agende sua Consulta</h2>
+        <p class="agendamento__intro">
+          Dê o primeiro passo em direção ao seu bem-estar. O agendamento é simples e rápido — escolha o melhor horário para você.
+        </p>
+
+        <div class="agendamento__cta-wrapper">
+          <a href="https://calendar.app.google/AHS8JkTUfwfoPJH28" target="_blank" rel="noopener noreferrer" class="agendamento__cta">
+            Agendar Consulta
+          </a>
+          <p class="agendamento__disponibilidade">Atendimento aos sábados, das 14h às 17h</p>
+        </div>
+
+        <div class="agendamento__processo">
+          <h3 class="agendamento__subtitle">Como funciona o agendamento</h3>
+          <ol class="agendamento__passos" role="list">
+            <li class="agendamento__passo">
+              <span class="agendamento__passo-numero" aria-hidden="true">1</span>
+              <div class="agendamento__passo-conteudo">
+                <strong>Escolha um horário</strong>
+                <p>Clique no botão acima e selecione o dia e horário disponível que melhor se encaixa na sua rotina.</p>
+              </div>
+            </li>
+            <li class="agendamento__passo">
+              <span class="agendamento__passo-numero" aria-hidden="true">2</span>
+              <div class="agendamento__passo-conteudo">
+                <strong>Preencha seus dados</strong>
+                <p>Informe seu nome, e-mail e telefone para que possamos entrar em contato.</p>
+              </div>
+            </li>
+            <li class="agendamento__passo">
+              <span class="agendamento__passo-numero" aria-hidden="true">3</span>
+              <div class="agendamento__passo-conteudo">
+                <strong>Aguarde a confirmação</strong>
+                <p>Você receberá um e-mail de confirmação com todos os detalhes da sua sessão.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="agendamento__remoto">
+          <h3 class="agendamento__subtitle">Consultas Remotas por Videochamada</h3>
+          <p class="agendamento__texto">
+            As sessões podem ser realizadas de forma remota, por videochamada. Essa modalidade permite que você tenha atendimento de qualidade sem precisar se deslocar — ideal para quem busca praticidade ou mora em outra cidade.
+          </p>
+
+          <div class="agendamento__dicas">
+            <h4 class="agendamento__dicas-titulo">Dicas para sua sessão remota</h4>
+            <ul class="agendamento__dicas-lista" role="list">
+              <li class="agendamento__dicas-item">Escolha um ambiente tranquilo e reservado, onde você não será interrompido</li>
+              <li class="agendamento__dicas-item">Verifique sua conexão de internet antes da sessão</li>
+              <li class="agendamento__dicas-item">Use fones de ouvido para maior privacidade e qualidade de áudio</li>
+              <li class="agendamento__dicas-item">Acomode-se em uma posição confortável — pode ser em uma poltrona ou sofá</li>
+              <li class="agendamento__dicas-item">Tenha um copo de água por perto</li>
+            </ul>
+          </div>
+        </div>
+
+        <noscript>
+          <div class="agendamento__fallback">
+            <p>Para agendar sua consulta, acesse diretamente: <a href="https://calendar.app.google/AHS8JkTUfwfoPJH28">calendar.app.google</a></p>
+          </div>
+        </noscript>
+      </div>
     </section>
 
     <section id="contato" aria-label="Contato">
-      <!-- Contato content will be implemented in Task 5.1 -->
+      <div class="contato__container animate-on-scroll">
+        <h2 class="contato__title">Entre em Contato</h2>
+        <p class="contato__intro">
+          Tem alguma dúvida ou gostaria de saber mais sobre o processo terapêutico? Envie uma mensagem e conversamos pelo WhatsApp.
+        </p>
+
+        <form id="contact-form" class="contato__form" novalidate>
+          <div class="contato__field">
+            <label for="contact-name" class="contato__label">Nome</label>
+            <input
+              type="text"
+              id="contact-name"
+              name="name"
+              class="contato__input"
+              placeholder="Seu nome"
+              required
+              autocomplete="name"
+              aria-required="true"
+            >
+          </div>
+
+          <div class="contato__field">
+            <label for="contact-message" class="contato__label">Mensagem</label>
+            <textarea
+              id="contact-message"
+              name="message"
+              class="contato__textarea"
+              placeholder="Escreva sua mensagem..."
+              rows="5"
+              required
+              aria-required="true"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="contato__submit">Enviar pelo WhatsApp</button>
+        </form>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <!-- Footer content will be implemented in Task 8.1 -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__container">
+      <div class="footer__content">
+        <div class="footer__info">
+          <p class="footer__brand">Hipnoterapia Humanista</p>
+          <p class="footer__location">Pindamonhangaba, SP</p>
+          <a href="https://wa.me/5512997564777" target="_blank" rel="noopener noreferrer" class="footer__whatsapp" aria-label="Contato via WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+
+        <nav class="footer__nav" aria-label="Links rápidos">
+          <ul class="footer__links" role="list">
+            <li><a href="#hero" class="footer__link">Início</a></li>
+            <li><a href="#hipnoterapia" class="footer__link">Hipnoterapia</a></li>
+            <li><a href="#terapeuta" class="footer__link">Sobre Mim</a></li>
+            <li><a href="#publico" class="footer__link">Público</a></li>
+            <li><a href="#agendamento" class="footer__link">Agendar</a></li>
+            <li><a href="#contato" class="footer__link">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Victor Nicolas Molinari. Todos os direitos reservados.</p>
+      </div>
+    </div>
   </footer>
+
+  <!-- Botão voltar ao topo -->
+  <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
 
   <script src="scripts/main.js"></script>
 </body>
