@@ -740,6 +740,16 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-2px);
 }
 
+.publico__card--destaque {
+  border-color: var(--color-accent);
+  border-width: 2px;
+}
+
+.publico__card--destaque .publico__card-icon {
+  background-color: var(--color-accent-light);
+  color: var(--color-accent-dark);
+}
+
 .publico__card-icon {
   display: flex;
   align-items: center;
@@ -829,7 +839,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .publico__cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .publico__destaque {
@@ -849,6 +859,10 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1024px) {
   .publico__title {
     font-size: var(--font-size-4xl);
+  }
+
+  .publico__cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .publico__card {
