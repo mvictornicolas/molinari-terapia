@@ -285,6 +285,9 @@ const ScrollManager = {
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
     if (!animatedElements.length) return;
 
+    // Mark elements as JS-ready so CSS can apply initial hidden state
+    animatedElements.forEach(el => el.classList.add('js-ready'));
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {

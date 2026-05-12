@@ -566,9 +566,11 @@ h1, h2, h3, h4, h5, h6 {
 .terapeuta__photo-img {
   width: 180px;
   height: 180px;
-  border-radius: var(--border-radius-full);
+  border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--color-primary-light);
+  display: block;
+  overflow: hidden;
 }
 
 .terapeuta__bio {
@@ -1084,7 +1086,7 @@ h1, h2, h3, h4, h5, h6 {
    Animações de Scroll (Fade-in)
    ========================================================================== */
 
-.animate-on-scroll {
+.animate-on-scroll.js-ready {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity var(--transition-slow), transform var(--transition-slow);
@@ -1097,7 +1099,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Respeitar preferência de movimento reduzido */
 @media (prefers-reduced-motion: reduce) {
-  .animate-on-scroll {
+  .animate-on-scroll.js-ready {
     opacity: 1;
     transform: none;
     transition: none;
